@@ -1499,3 +1499,8 @@ BOOL WINAPI MapUserPhysicalPages(PVOID addr, ULONG_PTR page_count, PULONG_PTR pa
     SetLastError(ERROR_CALL_NOT_IMPLEMENTED);
     return FALSE;
 }
+
+UINT WINAPI EnumSystemFirmwareTables(DWORD FirmwareTableProviderSignature, ULONG_PTR pFirmwareTableEnumBuffer, DWORD BufferSize)
+{
+    return 0;
+}
